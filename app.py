@@ -9,7 +9,7 @@ from PIL import Image
 
 # Load API
 load_dotenv()
-API_KEY = os.environ.get('Gemini_api_key')
+API_KEY = st.secrets("Gemini_api_key") #os.environ.get('Gemini_api_key')
 
 # Page configuration
 st.set_page_config(page_title="AI Scanner", layout="wide")
